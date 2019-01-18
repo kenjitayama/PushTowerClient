@@ -9,9 +9,9 @@ static IMP didRegisterOriginalMethod = NULL;
 + (void)load {
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
 
-#ifdef DEBUG
+//#ifdef DEBUG
         [PTClient setup];
-#endif
+//#endif
     }];
 }
 
@@ -35,6 +35,7 @@ static IMP didRegisterOriginalMethod = NULL;
 }
 
 - (void)my_application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
     if (didRegisterOriginalMethod) {
         void (*originalImp)(id, SEL, UIApplication *, NSData *) = didRegisterOriginalMethod;
         originalImp(self, @selector(application:didRegisterForRemoteNotificationsWithDeviceToken:), application, deviceToken);
@@ -48,12 +49,9 @@ static IMP didRegisterOriginalMethod = NULL;
         return;
     }
 
-    // x-topic header
-    NSString *topic = [[NSBundle mainBundle] bundleIdentifier];
-
     // body
     NSString *deviceTokenKey = [[UIDevice currentDevice] name]; // use device name
-    NSString *deviceTokenHex = [self stringWithDeviceToken:deviceToken];
+    NSString *deviceTokenHex = [PTClient stringWithDeviceToken:deviceToken];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
     [dict setValue:deviceTokenKey forKey:@"key"];
     [dict setValue:deviceTokenHex forKey:@"device_token"];
@@ -66,7 +64,6 @@ static IMP didRegisterOriginalMethod = NULL;
     [request setURL:putDeviceTokenURL];
     [request setHTTPMethod:@"PUT"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:topic forHTTPHeaderField:@"x-topic"];
     [request setHTTPBody:data];
 
     // send
@@ -77,7 +74,6 @@ static IMP didRegisterOriginalMethod = NULL;
                                         completionHandler:^(NSData * _Nullable data,
                                                             NSURLResponse * _Nullable response,
                                                             NSError * _Nullable error) {
-
                                             if (error) {
                                                 NSLog(@"error: %@", error);
                                             }
@@ -85,7 +81,7 @@ static IMP didRegisterOriginalMethod = NULL;
     [task resume];
 }
 
-- (NSString *)stringWithDeviceToken:(NSData *)deviceToken {
++ (NSString *)stringWithDeviceToken:(NSData *)deviceToken {
     const char *data = [deviceToken bytes];
     NSMutableString *token = [NSMutableString string];
     for (NSUInteger i = 0; i < [deviceToken length]; i++) {
