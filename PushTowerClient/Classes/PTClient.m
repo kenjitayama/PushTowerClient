@@ -9,9 +9,9 @@ static IMP didRegisterOriginalMethod = NULL;
 + (void)load {
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
 
-//#ifdef DEBUG
+#ifdef DEBUG
         [PTClient setup];
-//#endif
+#endif
     }];
 }
 
@@ -35,7 +35,7 @@ static IMP didRegisterOriginalMethod = NULL;
 }
 
 - (void)my_application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-
+#ifdef DEBUG
     if (didRegisterOriginalMethod) {
         void (*originalImp)(id, SEL, UIApplication *, NSData *) = didRegisterOriginalMethod;
         originalImp(self, @selector(application:didRegisterForRemoteNotificationsWithDeviceToken:), application, deviceToken);
@@ -79,6 +79,7 @@ static IMP didRegisterOriginalMethod = NULL;
                                             }
                                         }];
     [task resume];
+#endif
 }
 
 + (NSString *)stringWithDeviceToken:(NSData *)deviceToken {
