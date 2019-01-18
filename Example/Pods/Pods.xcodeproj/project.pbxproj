@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B7460F93BACE69A24938941CBC0967F /* PTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A61E5427DF8BD8A484824E716E2EC4 /* PTClient.m */; };
+		2D81874AEE1BBB320E03543A8A7F7A0E /* PushTowerClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 426295CDBD1DCB943C90B0804553DE52 /* PushTowerClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A56C71B2526B44DAF46CC7C648166BD /* Pods-PushTowerClient_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A12ABCEF17CE97810AEC2AF7B8052C93 /* Pods-PushTowerClient_Tests-dummy.m */; };
-		7CEB1EBB21F1975A00ADF3DD /* PTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEB1EBA21F1975A00ADF3DD /* PTClient.h */; };
-		7CEB1EBC21F1975A00ADF3DD /* PTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEB1EBA21F1975A00ADF3DD /* PTClient.h */; };
+		8616A4B37EFB2EF7821FEB12DF1A6240 /* PTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3DE33C5F1178F523C557B15275B907 /* PTClient.m */; };
 		96F732AEE52C70CEF1E68EE854593BC6 /* Pods-PushTowerClient_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCCE413B667078CF669E0450E5AA1A8 /* Pods-PushTowerClient_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D417FF99C65D74061A36409FDC4A262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A0BF97EB728B087DB71B7EB0873024EB /* PushTowerClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C9F5805E0668A7589143D603F21AFF /* PushTowerClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C08D3B221A498AA8951D3109CC934CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F3F4787D78AD2C58FFA856D9A82F6FA6 /* PushTowerClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3709C8E9500F5D00BF3D09B6B7F875BC /* PushTowerClient-dummy.m */; };
+		D2A08EE7F7F4CAA62F2E1E4EF2DA5833 /* PTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED2ABC42B9E136C9082EDF8218CC328 /* PTClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E234CA61B9ABFAB3ACD0A949F1FBFA /* PushTowerClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7314DBE38C56D8A6431997C81533D66 /* PushTowerClient-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,28 +29,28 @@
 
 /* Begin PBXFileReference section */
 		00C324D807CE6E60EE3AF0675381ACDA /* Pods-PushTowerClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PushTowerClient_Tests.modulemap"; sourceTree = "<group>"; };
-		1D0366232F4DBFB85DA7C76C129D721D /* PushTowerClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushTowerClient-prefix.pch"; sourceTree = "<group>"; };
-		25017B496D87A55153D8CC8DE7F7E9C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		165EEB4EBBDEE59803B53073DB5201F3 /* PushTowerClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PushTowerClient.xcconfig; sourceTree = "<group>"; };
+		1ED2ABC42B9E136C9082EDF8218CC328 /* PTClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTClient.h; path = PushTowerClient/Classes/PTClient.h; sourceTree = "<group>"; };
 		27426B8BB5FB4DF0C8A0686D943B1A86 /* Pods-PushTowerClient_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushTowerClient_Tests-resources.sh"; sourceTree = "<group>"; };
-		3709C8E9500F5D00BF3D09B6B7F875BC /* PushTowerClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushTowerClient-dummy.m"; sourceTree = "<group>"; };
+		3BD8565E6F9F0B26440B00FBD7DC0139 /* PushTowerClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushTowerClient-prefix.pch"; sourceTree = "<group>"; };
 		3F3033CCC487ADC96780D1D9467522AD /* Pods-PushTowerClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushTowerClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		48C9F5805E0668A7589143D603F21AFF /* PushTowerClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushTowerClient-umbrella.h"; sourceTree = "<group>"; };
+		426295CDBD1DCB943C90B0804553DE52 /* PushTowerClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushTowerClient-umbrella.h"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		63AF6A6376677CBF1FC26C8B65D1B130 /* Pods-PushTowerClient_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushTowerClient_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		648A6FB5AB3958AFF9F0C1C250A349FD /* Pods_PushTowerClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushTowerClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648A6FB5AB3958AFF9F0C1C250A349FD /* Pods_PushTowerClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PushTowerClient_Tests.framework; path = "Pods-PushTowerClient_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674D56399FE0FBB2E957BA97BF9A375C /* PushTowerClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PushTowerClient.modulemap; sourceTree = "<group>"; };
 		6B3EA00DA93120B63B6FF4D1804C7A55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D795B7D7B280982E8F36D46A2786320 /* Pods-PushTowerClient_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushTowerClient_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6E195FFA5F4DA2444787072BA173426C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7CEB1EBA21F1975A00ADF3DD /* PTClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTClient.h; path = PushTowerClient/Classes/PTClient.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7B23851C91769A15A392E289AE97B227 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A12ABCEF17CE97810AEC2AF7B8052C93 /* Pods-PushTowerClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushTowerClient_Tests-dummy.m"; sourceTree = "<group>"; };
-		A3A61E5427DF8BD8A484824E716E2EC4 /* PTClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTClient.m; path = PushTowerClient/Classes/PTClient.m; sourceTree = "<group>"; };
-		B9FCA4CB3AC690A9B5B65DC8FBC19EF0 /* PushTowerClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PushTowerClient.modulemap; sourceTree = "<group>"; };
-		BC5FD5FEA559546FDBB67567E5BDB6B6 /* PushTowerClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PushTowerClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C09659B694574CA1CCC1B38962307B1B /* PushTowerClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PushTowerClient.xcconfig; sourceTree = "<group>"; };
-		EB16AE22511A3561D83A3DE8BCA4F2FA /* PushTowerClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PushTowerClient.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EEAC6479FF122FEB38F5251B8250B066 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7314DBE38C56D8A6431997C81533D66 /* PushTowerClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushTowerClient-dummy.m"; sourceTree = "<group>"; };
+		BC5FD5FEA559546FDBB67567E5BDB6B6 /* PushTowerClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushTowerClient.framework; path = PushTowerClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73F4AE0A0195331B0AEF622717D5157 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D8DA5553F65276BFD0F0E42102B9D740 /* PushTowerClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PushTowerClient.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD3DE33C5F1178F523C557B15275B907 /* PTClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTClient.m; path = PushTowerClient/Classes/PTClient.m; sourceTree = "<group>"; };
 		F7FF88A0656FBA94F1B19CE3A28D4E95 /* Pods-PushTowerClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushTowerClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F8DF80CFB05CD94F9520BB890BF3BE66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F9568E71B08ED71714A236192D4F21E1 /* Pods-PushTowerClient_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushTowerClient_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FCCCE413B667078CF669E0450E5AA1A8 /* Pods-PushTowerClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushTowerClient_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,26 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03AF2532EFA69C8CCC46E46D3F53A6E1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EEAC6479FF122FEB38F5251B8250B066 /* Info.plist */,
-				B9FCA4CB3AC690A9B5B65DC8FBC19EF0 /* PushTowerClient.modulemap */,
-				C09659B694574CA1CCC1B38962307B1B /* PushTowerClient.xcconfig */,
-				3709C8E9500F5D00BF3D09B6B7F875BC /* PushTowerClient-dummy.m */,
-				1D0366232F4DBFB85DA7C76C129D721D /* PushTowerClient-prefix.pch */,
-				48C9F5805E0668A7589143D603F21AFF /* PushTowerClient-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PushTowerClient";
-			sourceTree = "<group>";
-		};
 		1594EC3D3C47ABE5E7D4D9F96E1EC2AC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				E05961C38F051ADF0692BA2F645F02C0 /* Pods-PushTowerClient_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		274CC2567C48E607439C53706098A198 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D73F4AE0A0195331B0AEF622717D5157 /* LICENSE */,
+				D8DA5553F65276BFD0F0E42102B9D740 /* PushTowerClient.podspec */,
+				F8DF80CFB05CD94F9520BB890BF3BE66 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		2D5DAF1DEECF2A10A84F682778345568 /* Products */ = {
@@ -107,14 +102,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DC4F6C86C780E34F43978B02E6644CA /* Pod */ = {
+		53A238B0DF2C34AAEA4A658979ECEC9D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25017B496D87A55153D8CC8DE7F7E9C5 /* LICENSE */,
-				EB16AE22511A3561D83A3DE8BCA4F2FA /* PushTowerClient.podspec */,
-				6E195FFA5F4DA2444787072BA173426C /* README.md */,
+				7B23851C91769A15A392E289AE97B227 /* Info.plist */,
+				674D56399FE0FBB2E957BA97BF9A375C /* PushTowerClient.modulemap */,
+				165EEB4EBBDEE59803B53073DB5201F3 /* PushTowerClient.xcconfig */,
+				B7314DBE38C56D8A6431997C81533D66 /* PushTowerClient-dummy.m */,
+				3BD8565E6F9F0B26440B00FBD7DC0139 /* PushTowerClient-prefix.pch */,
+				426295CDBD1DCB943C90B0804553DE52 /* PushTowerClient-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PushTowerClient";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -129,19 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9814F004F6EAF9911706852A7156AA49 /* Development Pods */,
+				F41C3C1E9A73D9CCFF95BBFD033C12EB /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				2D5DAF1DEECF2A10A84F682778345568 /* Products */,
 				1594EC3D3C47ABE5E7D4D9F96E1EC2AC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9814F004F6EAF9911706852A7156AA49 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ECFC8680A7906833309F8F5853B1500C /* PushTowerClient */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -170,16 +161,24 @@
 			path = "Target Support Files/Pods-PushTowerClient_Tests";
 			sourceTree = "<group>";
 		};
-		ECFC8680A7906833309F8F5853B1500C /* PushTowerClient */ = {
+		F13757AF55313261C07E251E62634DC1 /* PushTowerClient */ = {
 			isa = PBXGroup;
 			children = (
-				A3A61E5427DF8BD8A484824E716E2EC4 /* PTClient.m */,
-				7CEB1EBA21F1975A00ADF3DD /* PTClient.h */,
-				3DC4F6C86C780E34F43978B02E6644CA /* Pod */,
-				03AF2532EFA69C8CCC46E46D3F53A6E1 /* Support Files */,
+				1ED2ABC42B9E136C9082EDF8218CC328 /* PTClient.h */,
+				DD3DE33C5F1178F523C557B15275B907 /* PTClient.m */,
+				274CC2567C48E607439C53706098A198 /* Pod */,
+				53A238B0DF2C34AAEA4A658979ECEC9D /* Support Files */,
 			);
 			name = PushTowerClient;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		F41C3C1E9A73D9CCFF95BBFD033C12EB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F13757AF55313261C07E251E62634DC1 /* PushTowerClient */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,16 +189,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				96F732AEE52C70CEF1E68EE854593BC6 /* Pods-PushTowerClient_Tests-umbrella.h in Headers */,
-				7CEB1EBB21F1975A00ADF3DD /* PTClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78127D94651DB9E0DB2BD0BF6D28B1AF /* Headers */ = {
+		0F57E1A841ED49BB17C1350471102D76 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0BF97EB728B087DB71B7EB0873024EB /* PushTowerClient-umbrella.h in Headers */,
-				7CEB1EBC21F1975A00ADF3DD /* PTClient.h in Headers */,
+				D2A08EE7F7F4CAA62F2E1E4EF2DA5833 /* PTClient.h in Headers */,
+				2D81874AEE1BBB320E03543A8A7F7A0E /* PushTowerClient-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +226,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E9A8FDECDF29356089AA98FC9DD78A4 /* Build configuration list for PBXNativeTarget "PushTowerClient" */;
 			buildPhases = (
-				AC8099F8E70747291F853D28A56273F9 /* Sources */,
+				8CF7CD643503089BE6ED4279CC0CB188 /* Sources */,
 				1EAB256E8C91255B0F5340275CDC6BCE /* Frameworks */,
-				78127D94651DB9E0DB2BD0BF6D28B1AF /* Headers */,
+				0F57E1A841ED49BB17C1350471102D76 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -277,12 +275,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC8099F8E70747291F853D28A56273F9 /* Sources */ = {
+		8CF7CD643503089BE6ED4279CC0CB188 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F4787D78AD2C58FFA856D9A82F6FA6 /* PushTowerClient-dummy.m in Sources */,
-				1B7460F93BACE69A24938941CBC0967F /* PTClient.m in Sources */,
+				8616A4B37EFB2EF7821FEB12DF1A6240 /* PTClient.m in Sources */,
+				E8E234CA61B9ABFAB3ACD0A949F1FBFA /* PushTowerClient-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +298,7 @@
 /* Begin XCBuildConfiguration section */
 		3E1F416D5C334D70E85D8BCF7C208268 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09659B694574CA1CCC1B38962307B1B /* PushTowerClient.xcconfig */;
+			baseConfigurationReference = 165EEB4EBBDEE59803B53073DB5201F3 /* PushTowerClient.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -485,7 +483,7 @@
 		};
 		E2FA385E5272665135F81F561D929D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09659B694574CA1CCC1B38962307B1B /* PushTowerClient.xcconfig */;
+			baseConfigurationReference = 165EEB4EBBDEE59803B53073DB5201F3 /* PushTowerClient.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

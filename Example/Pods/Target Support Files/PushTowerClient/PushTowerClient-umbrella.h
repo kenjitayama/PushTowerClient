@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "PTClient.h"
 
 FOUNDATION_EXPORT double PushTowerClientVersionNumber;
 FOUNDATION_EXPORT const unsigned char PushTowerClientVersionString[];
