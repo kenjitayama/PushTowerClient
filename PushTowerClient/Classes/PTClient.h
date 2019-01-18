@@ -9,7 +9,6 @@
 #define PTClient_h
 
 @interface PTClient : NSObject
-+ (void)setup;
 @end
 
 #endif /* PTClient_h */
